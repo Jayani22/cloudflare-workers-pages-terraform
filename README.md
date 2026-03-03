@@ -89,3 +89,8 @@ This will:
 - GitHub-based CI/CD
 - Cross-Origin communication (CORS) configuration
 - End-to-end deployment verification
+
+---
+
+### Loom Video:
+https://www.loom.com/share/eef8888fd5764b2eb72a9dbfdc1cf9ce

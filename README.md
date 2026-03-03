@@ -1,7 +1,7 @@
 # Cloudflare Workers + Pages Deployment using Terraform
 ### Cloudflare Calculator App (Terraform Deployment)
 
-This project demonstrates deploying a full-stack application on Cloudflare using **Terraform**.
+This project demonstrates deploying application on Cloudflare using **Terraform**.
 It includes:
 - Backend deployed using **Cloudflare Workers**
 - Frontend deployed using **Cloudflare Pages**

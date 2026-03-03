@@ -7,19 +7,17 @@ This project demonstrates how to deploy:
 - Infrastructure provisioning using **Terraform**
 - GitHub integration for automatic deployments
 Both backend and frontend resources are created and managed using Terraform.
+
 ---
 
 ## Architecture Overview
 
-Frontend (Cloudflare Pages)
-        ↓
-Calls Backend API
-        ↓
-Cloudflare Worker (Serverless Backend)
+Frontend (Cloudflare Pages) -> Calls Backend API -> Cloudflare Worker (Serverless Backend)
 
 - Backend returns JSON response
 - Frontend fetches and displays response
 - CORS enabled for cross-origin communication
+
 ---
 
 ## Backend (Cloudflare Worker)
@@ -28,6 +26,8 @@ Cloudflare Worker (Serverless Backend)
 - Hosted on workers.dev subdomain
 - Returns JSON response
 - CORS enabled to allow frontend access
+
+---
 
 ## Frontend (Cloudflare Pages)
 - Created using Terraform resource: `cloudflare_pages_project`
@@ -55,12 +55,16 @@ This will:
 - Connect GitHub repository
 - Configure build settings
 
+---
+
 ## Security
 
 - API token stored as environment variable
 `export TF_VAR_cloudflare_api_token=your_token`
 - Terraform state files excluded using .gitignore
 - No credentials stored in repository
+
+---
 
 ## Features Implemented
 - Infrastructure as a Code (Terraform)
@@ -69,6 +73,8 @@ This will:
 - GitHub-based CI/CD
 - Cross-Origin communication (CORS) configuration
 - End-to-end deployment verification
+
+---
 
 ## Loom Video Link:
 https://www.loom.com/share/bdd0f1513ecf49f38616a994ae567fa6
